@@ -9,7 +9,7 @@ export function HH_Header() {
   return (
     <header className="bg-white shadow-md">
       {/*DESKTOP FORMAT*/}
-      <div className="max-w-6xl mx-auto px-4 py-4 items-center justify-between hidden sm:flex">
+      <div className="max-w-8xl mx-auto px-4 py-4 items-center justify-between hidden sm:flex">
         <h1 className="text-2xl font-bold text-gray-800">Habitat for Humanity</h1>
         
         <nav className="space-x-4 hidden sm:flex">
@@ -23,7 +23,7 @@ export function HH_Header() {
             Pricing
           </a>
         </nav>
-        <Button>
+        <Button className="rounded-4xl w-10 h-10">
           <i className="fa-solid fa-language text-xl"></i>
         </Button>
       </div>
@@ -40,7 +40,7 @@ export function HH_Header() {
             <i className="fa-solid fa-bars cursor-pointer fa-xl"></i>
           </PopoverTrigger>
           <PopoverContent className="w-80">
-            
+
           </PopoverContent>
         </Popover>
       </div>
