@@ -14,16 +14,22 @@ export default function Home() {
       group
       ">
         <img
-          src="/images/hh-family-expand.jpg"
+          src="/images/hh-family-expand2.jpg"
           className="
-            relative h-62 w-full my-10 object-cover transition-all duration-500
-            sm:rounded-[50%] sm:w-100 sm:h-100
-            group-hover:rounded-[0%]
-            group-hover:w-480
-            group-hover:h-190
-            group-hover:my-0
-            group-hover:[transform:rotateY(180deg)]
-            transform [transform-style:preserve-3d]
+            transition-all 
+            sm:relative
+            sm:my-10 
+            sm:object-cover 
+            sm:duration-500
+            sm:rounded-[50%] 
+            sm:w-80 
+            sm:h-80
+            sm:group-hover:rounded-[0%]
+            sm:group-hover:w-480
+            sm:group-hover:h-120
+            sm:group-hover:my-0
+            sm:group-hover:[transform:rotateY(180deg)]
+            sm:transform [transform-style:preserve-3d]
             "
           alt="Habitat for Humanity Family Photo"
           />
