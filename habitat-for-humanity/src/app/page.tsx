@@ -4,34 +4,14 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { HH_Header } from "@/components/ui/hh-header";
 
 export default function Home() {
-  const [lang, setLang] = useState<"EN" | "ES">("EN");
 
   return (
     <div className="flex flex-col min-h-screen">
       {/* HEADER */}
-      <header className="bg-white shadow-md">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-gray-800">Habitat for Humanity</h1>
-
-          <nav className="space-x-4">
-            <a href="#" className="text-gray-700 hover:text-gray-900">
-              Home
-            </a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">
-              Features
-            </a>
-            <a href="#" className="text-gray-700 hover:text-gray-900">
-              Pricing
-            </a>
-          </nav>
-
-          <Button
-          ><i className="fa-slab fa-regular fa-language"></i>
-          </Button>
-        </div>
-      </header>
+      <HH_Header/>
 
       {/* MAIN CONTENT */}
       <main className="flex-grow bg-gray-50">
@@ -58,24 +38,6 @@ export default function Home() {
               </CardContent>
             </Card>
           </section>
-
-          {/* SETTINGS */}
-          <aside>
-            <Card>
-              <CardHeader>
-                <CardTitle>Settings</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <Button className="w-full">Profile</Button>
-                <Button className="w-full" variant="outline">
-                  Preferences
-                </Button>
-                <Button className="w-full" variant="secondary">
-                  Logout
-                </Button>
-              </CardContent>
-            </Card>
-          </aside>
         </div>
       </main>
 
