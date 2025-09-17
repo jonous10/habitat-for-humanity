@@ -2,6 +2,7 @@
 
 import { HH_Header } from "@/components/ui/hh-header";
 import { HH_Footer } from "@/components/ui/hh-footer";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
 
@@ -33,9 +34,11 @@ export default function Home() {
             "
           alt="Habitat for Humanity Family Photo"
           />
-          <img src=""/>
       </div>
-      
+      <Button className="bg-red-600 m-auto ">
+          <p className="font-bold text-xl">Donate</p>
+          <i className="fa-solid fa-heart fa-beat"></i>
+        </Button>
       <HH_Footer/>
     </div>
   );
