@@ -43,10 +43,10 @@ export function HH_Header() {
       {/*MOBILE FORMAT*/}
       <div className="max-w-6xl mx-auto px-4 py-4 items-center justify-between flex sm:hidden">
         <h1 className="text-1xl font-bold text-gray-800">Habitat for Humanity</h1>
-        <Button className="bg-red-600">
-          <p className="font-bold text-xl">Donate</p>
+        <Button className="bg-red-600 m-auto ">
+          <p className="font-bold text-xl">{language_sup.donate[lang as keyof typeof language_sup.donate]}</p>
           <i className="fa-solid fa-heart fa-beat"></i>
-        </Button>
+      </Button>
         {/* HAMBURGET MENU */}
         <Popover>
           <PopoverTrigger asChild>

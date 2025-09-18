@@ -38,7 +38,7 @@ export default function Home() {
           />
       </div>
       <Button className="bg-red-600 m-auto ">
-          <p className="font-bold text-xl">Donate</p>
+          <p className="font-bold text-xl">{language_sup.donate[lang as keyof typeof language_sup.donate]}</p>
           <i className="fa-solid fa-heart fa-beat"></i>
       </Button>
       <HH_Footer/>

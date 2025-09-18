@@ -24,5 +24,10 @@
         "en": "Login",
         "no": "Logg inn",
         "ar": "تسجيل الدخول"
+    },
+    "donate": {
+        "en": "Donate",
+        "no": "Doner",
+        "ar": "تبرع"
     }
 }
