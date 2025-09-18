@@ -1,6 +1,6 @@
 export function HH_Footer() {
   return (
-    <footer className="bg-white shadow-inner mt-8">
+    <footer className="bg-[#3E3F29] shadow-inner mt-8">
       <div className="max-w-6xl mx-auto px-4 py-6 text-center text-sm text-gray-500 flex flex-col items-center gap-2">
         <div className="flex gap-4 justify-center mb-2">
           <a href="https://www.facebook.com/habitat" target="_blank" rel="noopener noreferrer" aria-label="Facebook">

@@ -27,6 +27,11 @@ export function HH_Header() {
           <a href="#" className="text-gray-700 hover:text-gray-900">
             Pricing
           </a>
+          <a href="#" className="text-gray-700 hover:text-gray-900">
+            Home
+          </a><a href="#" className="text-gray-700 hover:text-gray-900">
+            Home
+          </a>
         </nav>
         <div className="max-w-8xl px-4 py-4 items-center justify-between hidden sm:flex">
           <h1 className="m-auto">{lang}</h1>
