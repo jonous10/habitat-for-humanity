@@ -4,10 +4,15 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
+import { LanguageSelector } from "./language-select";
+import { useLanguage } from "@/contexts/language-context";
 
 export function HH_Header() {
+
+    const { lang, setLang } = useLanguage();
+    
   return (
-    <header className="bg-white shadow-md">
+    <header className="shadow-md">
       {/*DESKTOP FORMAT*/}
       <div className="max-w-8xl mx-auto px-4 py-4 items-center justify-between hidden sm:flex">
         <h1 className="text-2xl font-bold text-gray-800">Habitat for Humanity</h1>
@@ -23,9 +28,11 @@ export function HH_Header() {
             Pricing
           </a>
         </nav>
-        <Button className="rounded-4xl w-10 h-10">
-          <i className="fa-solid fa-language text-xl"></i>
-        </Button>
+        <div className="max-w-8xl px-4 py-4 items-center justify-between hidden sm:flex">
+          <h1 className="m-auto">{lang}</h1>
+          <LanguageSelector/>
+        </div>
+        
       </div>
       {/*MOBILE FORMAT*/}
       <div className="max-w-6xl mx-auto px-4 py-4 items-center justify-between flex sm:hidden">

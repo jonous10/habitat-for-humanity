@@ -1,0 +1,7 @@
+{
+    "supports": ["en", "no"],
+    "testing": {
+        "en" : "English here!",
+        "no" : "Norsk her!"
+    }
+}
