@@ -22,6 +22,9 @@ export function HH_Footer() {
         <div>
           © {new Date().getFullYear()} Habitat for Humanity. All rights reserved.
         </div>
+        <div>
+          A true marvel of webdesign since {new Date().toLocaleDateString()}
+        </div>
       </div>
     </footer>
   )

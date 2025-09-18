@@ -1,7 +1,28 @@
 {
-    "supports": ["en", "no"],
-    "testing": {
-        "en" : "English here!",
-        "no" : "Norsk her!"
+    "supports": ["en", "no", "ar"],
+    "volunteer": {
+        "en": "Volunteer",
+        "no": "Frivillig",
+        "ar": "تطوع"
+    },
+    "support": {
+        "en": "Support",
+        "no": "Støtte",
+        "ar": "الدعم"
+    },
+    "projects": {
+        "en": "Projects",
+        "no": "Prosjekter",
+        "ar": "المشاريع"
+    },
+    "aboutus": {
+        "en": "About us",
+        "no": "Om oss",
+        "ar": "معلومات عنا"
+    },
+    "login": {
+        "en": "Login",
+        "no": "Logg inn",
+        "ar": "تسجيل الدخول"
     }
 }

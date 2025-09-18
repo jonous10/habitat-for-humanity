@@ -41,7 +41,6 @@ export default function Home() {
           <p className="font-bold text-xl">Donate</p>
           <i className="fa-solid fa-heart fa-beat"></i>
       </Button>
-      <p className="text-3xl">{language_sup.testing[lang as keyof typeof language_sup.testing]}</p>
       <HH_Footer/>
     </div>
   );

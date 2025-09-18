@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/popover"
 import { LanguageSelector } from "./language-select";
 import { useLanguage } from "@/contexts/language-context";
+import language_sup from "@/language-sup/language_sup.json"
 
 export function HH_Header() {
 
@@ -14,30 +15,30 @@ export function HH_Header() {
   return (
     <header className="shadow-md">
       {/*DESKTOP FORMAT*/}
-      <div className="max-w-8xl mx-auto px-4 py-4 items-center justify-between hidden sm:flex">
+      <div className="max-w-8xl mx-auto px-8 py-4 items-center justify-between hidden sm:flex">
         <h1 className="text-2xl font-bold text-gray-800">Habitat for Humanity</h1>
         
-        <nav className="space-x-4 hidden sm:flex">
+        <nav className="gap-10 hidden sm:flex">
           <a href="#" className="text-gray-700 hover:text-gray-900">
-            Home
+        <p className="text-xl">{language_sup.volunteer[lang as keyof typeof language_sup.volunteer]}</p>
           </a>
           <a href="#" className="text-gray-700 hover:text-gray-900">
-            Features
+        <p className="text-xl">{language_sup.support[lang as keyof typeof language_sup.support]}</p>
           </a>
           <a href="#" className="text-gray-700 hover:text-gray-900">
-            Pricing
+        <p className="text-xl">{language_sup.projects[lang as keyof typeof language_sup.projects]}</p>
           </a>
           <a href="#" className="text-gray-700 hover:text-gray-900">
-            Home
-          </a><a href="#" className="text-gray-700 hover:text-gray-900">
-            Home
+        <p className="text-xl">{language_sup.aboutus[lang as keyof typeof language_sup.aboutus]}</p>
+          </a>
+          <a href="#" className="text-gray-700 hover:text-gray-900">
+        <p className="text-xl">{language_sup.login[lang as keyof typeof language_sup.login]}</p>
           </a>
         </nav>
-        <div className="max-w-8xl px-4 py-4 items-center justify-between hidden sm:flex">
-          <h1 className="m-auto">{lang}</h1>
-          <LanguageSelector/>
+        <div className="flex flex-col items-center gap-1">
+          <LanguageSelector />
+          <span className="text-xl text-gray-500">{lang}</span>
         </div>
-        
       </div>
       {/*MOBILE FORMAT*/}
       <div className="max-w-6xl mx-auto px-4 py-4 items-center justify-between flex sm:hidden">
