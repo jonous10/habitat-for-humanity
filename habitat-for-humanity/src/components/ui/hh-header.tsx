@@ -6,7 +6,8 @@ import {
 } from "@/components/ui/popover"
 import { LanguageSelector } from "./language-select";
 import { useLanguage } from "@/contexts/language-context";
-import language_sup from "@/language-sup/language_sup.json"
+import language_sup from "@/language-sup/language_sup.json";
+import HHLogo from "/svg/hh-logo.svg";
 
 export function HH_Header() {
 
@@ -42,7 +43,7 @@ export function HH_Header() {
       {/*MOBILE FORMAT*/}
       <div className="max-w-6xl mx-auto px-4 py-4 flex sm:hidden">
         <div className="flex flex-1 justify-center">
-          <h1 className="text-1xl font-bold text-gray-800">Habitat for Humanity</h1>
+          <img src="/svg/hh-logo.svg" className="w-15 h-auto"/>
         </div>
         <div className="flex flex-1 justify-center">
           <Button className="bg-red-600 m-auto">
