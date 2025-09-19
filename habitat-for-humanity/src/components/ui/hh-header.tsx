@@ -15,47 +15,53 @@ export function HH_Header() {
   return (
     <header className="shadow-md">
       {/*DESKTOP FORMAT*/}
-      <div className="max-w-8xl mx-auto px-8 py-4 items-center justify-between hidden sm:flex">
-        <h1 className="text-2xl font-bold text-gray-800">Habitat for Humanity</h1>
+      <div className="max-w-8xl mx-auto px-8 py-4 items-center hidden sm:flex">
+        <h1 className="text-2xl font-bold text-gray-800 flex-1">Habitat for Humanity</h1>
         
-        <nav className="gap-10 hidden sm:flex">
+        <nav className="gap-8 flex justify-center flex-1">
           <a href="#" className="text-gray-700 hover:text-gray-900">
-        <p className="text-xl">{language_sup.volunteer[lang as keyof typeof language_sup.volunteer]}</p>
+            <p className="text-xl">{language_sup.volunteer[lang as keyof typeof language_sup.volunteer]}</p>
           </a>
           <a href="#" className="text-gray-700 hover:text-gray-900">
-        <p className="text-xl">{language_sup.support[lang as keyof typeof language_sup.support]}</p>
+            <p className="text-xl">{language_sup.support[lang as keyof typeof language_sup.support]}</p>
           </a>
           <a href="#" className="text-gray-700 hover:text-gray-900">
-        <p className="text-xl">{language_sup.projects[lang as keyof typeof language_sup.projects]}</p>
+            <p className="text-xl">{language_sup.projects[lang as keyof typeof language_sup.projects]}</p>
           </a>
           <a href="#" className="text-gray-700 hover:text-gray-900">
-        <p className="text-xl">{language_sup.aboutus[lang as keyof typeof language_sup.aboutus]}</p>
+            <p className="text-xl">{language_sup.aboutus[lang as keyof typeof language_sup.aboutus]}</p>
           </a>
           <a href="#" className="text-gray-700 hover:text-gray-900">
-        <p className="text-xl">{language_sup.login[lang as keyof typeof language_sup.login]}</p>
+            <p className="text-xl">{language_sup.login[lang as keyof typeof language_sup.login]}</p>
           </a>
         </nav>
-        <div className="flex flex-col items-center gap-1">
+        <div className="flex flex-col items-end gap-1 flex-1">
           <LanguageSelector />
-          <span className="text-xl text-gray-500">{lang}</span>
         </div>
       </div>
       {/*MOBILE FORMAT*/}
-      <div className="max-w-6xl mx-auto px-4 py-4 items-center justify-between flex sm:hidden">
-        <h1 className="text-1xl font-bold text-gray-800">Habitat for Humanity</h1>
-        <Button className="bg-red-600 m-auto ">
-          <p className="font-bold text-xl">{language_sup.donate[lang as keyof typeof language_sup.donate]}</p>
-          <i className="fa-solid fa-heart fa-beat"></i>
-      </Button>
-        {/* HAMBURGET MENU */}
-        <Popover>
-          <PopoverTrigger asChild>
-            <i className="fa-solid fa-bars cursor-pointer fa-xl"></i>
-          </PopoverTrigger>
-          <PopoverContent className="w-80">
-
-          </PopoverContent>
-        </Popover>
+      <div className="max-w-6xl mx-auto px-4 py-4 flex sm:hidden">
+        <div className="flex flex-1 justify-center">
+          <h1 className="text-1xl font-bold text-gray-800">Habitat for Humanity</h1>
+        </div>
+        <div className="flex flex-1 justify-center">
+          <Button className="bg-red-600 m-auto">
+        <p className="font-bold text-xl">{language_sup.donate[lang as keyof typeof language_sup.donate]}</p>
+        <i className="fa-solid fa-heart fa-beat"></i>
+          </Button>
+        </div>
+        <div className="flex flex-1 justify-center">
+          {/* HAMBURGER MENU */}
+          <div className="flex items-center justify-end w-full">
+            <Popover>
+              <PopoverTrigger asChild>
+                <i className="fa-solid fa-bars cursor-pointer fa-xl"></i>
+              </PopoverTrigger>
+              <PopoverContent className="w-80">
+              </PopoverContent>
+            </Popover>
+          </div>
+        </div>
       </div>
     </header>
   )

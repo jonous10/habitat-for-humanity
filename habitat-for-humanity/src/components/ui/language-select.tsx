@@ -27,11 +27,14 @@ export function LanguageSelector() {
           {language_sup.supports.map((supportedLang: string) => (
             <div key={supportedLang} className="flex items-center justify-center">
               <p
-                className="m-1 w-12 h-8 cursor-pointer rounded-2xl text-2xl flex items-center justify-center text-center"
+                className="m-1 cursor-pointer text-2xl self-start"
                 onClick={() => handleLanguageChange(supportedLang)}
               >
                 {supportedLang}
               </p>
+              {lang === supportedLang ? (
+                <i className="fa-solid fa-check m- text-xs"></i>
+              ) : null}
             </div>
           ))}
         </div>
