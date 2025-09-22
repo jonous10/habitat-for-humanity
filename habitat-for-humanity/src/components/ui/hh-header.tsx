@@ -7,7 +7,6 @@ import {
 import { LanguageSelector } from "./language-select";
 import { useLanguage } from "@/contexts/language-context";
 import language_sup from "@/language-sup/language_sup.json";
-import HHLogo from "/svg/hh-logo.svg";
 
 export function HH_Header() {
 
@@ -17,23 +16,24 @@ export function HH_Header() {
     <header className="shadow-md">
       {/*DESKTOP FORMAT*/}
       <div className="max-w-8xl mx-auto px-8 py-4 items-center hidden sm:flex">
-        <img src="/svg/hh-logo.svg" className="w-15 h-auto"/>
+        <a href="/"><img  src="/svg/hh-logo.svg" className="w-15 h-auto"/></a>
+        
         <h1 className="font-bold text-gray-800 flex-1 text-[14px] xl:text-[24px]">Habitat for Humanity</h1>
         
         <nav className="gap-8 flex justify-center flex-1 text-[14px] xl:text-[20px]">
-          <a href="#" className="text-gray-700 hover:text-gray-900">
+          <a href="/volunteer" className="text-gray-700 hover:text-gray-900">
             <p>{language_sup.volunteer[lang as keyof typeof language_sup.volunteer]}</p>
           </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
+          <a href="/support" className="text-gray-700 hover:text-gray-900">
             <p>{language_sup.support[lang as keyof typeof language_sup.support]}</p>
           </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
+          <a href="/projects" className="text-gray-700 hover:text-gray-900">
             <p>{language_sup.projects[lang as keyof typeof language_sup.projects]}</p>
           </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
+          <a href="/aboutus" className="text-gray-700 hover:text-gray-900">
             <p>{language_sup.aboutus[lang as keyof typeof language_sup.aboutus]}</p>
           </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
+          <a href="/login" className="text-gray-700 hover:text-gray-900">
             <p>{language_sup.login[lang as keyof typeof language_sup.login]}</p>
           </a>
         </nav>
@@ -59,7 +59,24 @@ export function HH_Header() {
               <PopoverTrigger asChild>
                 <i className="fa-solid fa-bars cursor-pointer fa-xl"></i>
               </PopoverTrigger>
-              <PopoverContent className="w-80">
+              <PopoverContent className="w-30">
+              <div className="p-2">
+                <div className="flex items-center justify-center">
+                  <p>{language_sup.volunteer[lang as keyof typeof language_sup.volunteer]}</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p>{language_sup.support[lang as keyof typeof language_sup.support]}</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p>{language_sup.projects[lang as keyof typeof language_sup.projects]}</p>
+                </div>
+                <div className="flex items-center justify-center">
+                  <p>{language_sup.aboutus[lang as keyof typeof language_sup.aboutus]}</p>
+                </div>
+                <div className="flex items-center justify-center">
+                    <p>{language_sup.login[lang as keyof typeof language_sup.login]}</p>
+                </div>
+              </div>
               </PopoverContent>
             </Popover>
           </div>
