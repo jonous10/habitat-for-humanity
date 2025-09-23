@@ -41,8 +41,26 @@ export default function Home() {
           <p className="font-bold text-xl">{language_sup.donate[lang as keyof typeof language_sup.donate]}</p>
           <i className="fa-solid fa-heart fa-beat"></i>
       </Button>
-      <h1>{language_sup.slogan[lang as keyof typeof language_sup.slogan]}</h1>
-      <p>{language_sup.shortinfo[lang as keyof typeof language_sup.shortinfo]}</p>
+      {/* SLOGAN */}
+      <h1 
+      className="
+        text-4xl sm:text-5xl font-extrabold text-center mt-20 
+        drop-shadow-md tracking-wide 
+        animate-fadeIn
+      "
+      >
+        {language_sup.slogan[lang as keyof typeof language_sup.slogan]}
+      </h1>
+      {/* SHORT INFO */}
+      <p 
+      className="
+        text-lg sm:text-xl text-gray-600 text-center max-w-3xl mx-auto mt-10 px-6 
+        leading-relaxed tracking-normal
+        animate-fadeIn delay-200
+      "
+      >
+        {language_sup.shortinfo[lang as keyof typeof language_sup.shortinfo]}
+      </p>
       <HH_Footer/>
     </div>
   );

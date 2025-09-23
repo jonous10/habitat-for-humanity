@@ -16,10 +16,14 @@ export function HH_Header() {
     <header className="shadow-md">
       {/*DESKTOP FORMAT*/}
       <div className="max-w-8xl mx-auto px-8 py-4 items-center hidden sm:flex">
-        <a href="/" className="flex">
-          <img  src="/svg/hh-logo.svg" className="w-15 h-auto"/>
-          <h1 className="font-bold text-gray-800 flex-1 text-[14px] xl:text-[24px]">Habitat for Humanity</h1>
-        </a>
+        <div className="flex flex-row">
+          <a href="/">
+            <img  src="/svg/hh-logo.svg" className="w-15 h-auto"/>
+          </a>
+          <a href="/">
+            <h1 className="font-bold text-gray-800 text-[14px] xl:text-[24px]">Habitat for Humanity</h1>
+          </a>
+        </div>
         
         
         
@@ -47,7 +51,9 @@ export function HH_Header() {
       {/*MOBILE FORMAT*/}
       <div className="max-w-6xl mx-auto px-4 py-4 flex sm:hidden">
         <div className="flex flex-1">
-          <img src="/svg/hh-logo.svg" className="w-15 h-auto"/>
+          <a href="/">
+            <img src="/svg/hh-logo.svg" className="w-15 h-auto"/>
+          </a>
         </div>
         <div className="flex flex-1 justify-center">
           <Button className="bg-red-600 m-auto">
