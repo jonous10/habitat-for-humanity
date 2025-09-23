@@ -30,14 +30,15 @@ export default function Home() {
             sm:group-hover:rounded-[0%]
             sm:group-hover:w-480
             sm:group-hover:h-120
-            sm:group-hover:my-0
+            sm:group-hover:mt-0
+            sm:group-hover:mb-20
             sm:group-hover:[transform:rotateY(180deg)]
             sm:transform [transform-style:preserve-3d]
             "
           alt="Habitat for Humanity Family Photo"
           />
       </div>
-      <Button className="bg-red-600 m-auto ">
+      <Button className="bg-red-600 m-auto">
           <p className="font-bold text-xl">{language_sup.donate[lang as keyof typeof language_sup.donate]}</p>
           <i className="fa-solid fa-heart fa-beat"></i>
       </Button>
