@@ -271,5 +271,11 @@
         "한국어": "자원봉사자",
         "Русский": "Волонтер",
         "中文": "志愿者"
+    },
+    "slogan": {
+        "English" : "Together, we build a better future."
+    },
+    "shortinfo": {
+        "English" : "Habitat for Humanity is a movement of people in your local area and around the world, working together to build more prosperous and vibrant communities by making sure everyone has a safe, affordable place to call home."
     }
 }
