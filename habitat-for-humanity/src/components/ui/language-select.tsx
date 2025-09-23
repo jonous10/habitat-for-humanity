@@ -1,6 +1,5 @@
 import * as React from "react"
 
-import { ScrollArea } from "@/components/ui/scroll-area"
 import language_sup from "@/language-sup/language_sup.json"
 import { Button } from "./button"
 import { useLanguage } from "@/contexts/language-context";
