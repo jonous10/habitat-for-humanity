@@ -16,9 +16,12 @@ export function HH_Header() {
     <header className="shadow-md">
       {/*DESKTOP FORMAT*/}
       <div className="max-w-8xl mx-auto px-8 py-4 items-center hidden sm:flex">
-        <a href="/"><img  src="/svg/hh-logo.svg" className="w-15 h-auto"/></a>
+        <a href="/" className="flex">
+          <img  src="/svg/hh-logo.svg" className="w-15 h-auto"/>
+          <h1 className="font-bold text-gray-800 flex-1 text-[14px] xl:text-[24px]">Habitat for Humanity</h1>
+        </a>
         
-        <h1 className="font-bold text-gray-800 flex-1 text-[14px] xl:text-[24px]">Habitat for Humanity</h1>
+        
         
         <nav className="gap-8 flex justify-center flex-1 text-[14px] xl:text-[20px]">
           <a href="/volunteer" className="text-gray-700 hover:text-gray-900">
