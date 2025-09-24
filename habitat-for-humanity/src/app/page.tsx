@@ -17,8 +17,8 @@ export default function Home() {
       duration-500
       mx-auto
       mt-0
-      sm:mb-40
-      max-sm:mb-10
+      sm:mb-20
+      max-sm:mb-0
       group
       ">
         <img
@@ -56,7 +56,7 @@ export default function Home() {
           alt="Habitat for Humanity Family Photo"
           />
       </div>
-      <Button className="bg-red-600 m-auto">
+      <Button className="bg-red-600 m-auto mt-10 max-sm:hidden">
           <p className="font-bold text-xl">{language_sup.donate[lang as keyof typeof language_sup.donate]}</p>
           <i className="fa-solid fa-heart fa-beat"></i>
       </Button>
