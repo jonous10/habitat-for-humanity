@@ -56,9 +56,14 @@ export default function Home() {
           alt="Habitat for Humanity Family Photo"
           />
       </div>
-      <Button className="bg-red-600 m-auto mt-10 max-sm:hidden">
-          <p className="font-bold text-xl">{language_sup.donate[lang as keyof typeof language_sup.donate]}</p>
-          <i className="fa-solid fa-heart fa-beat"></i>
+      <Button 
+          onClick={() => window.location.href = 'https://ffmpreg.org'} 
+          className="bg-red-600 m-auto mt-10 max-sm:hidden"
+        >
+        <p className="font-bold text-xl">
+          {language_sup.donate[lang as keyof typeof language_sup.donate]}
+        </p>
+        <i className="fa-solid fa-heart fa-beat"></i>
       </Button>
       {/* SLOGAN */}
       <h1 
@@ -85,3 +90,4 @@ export default function Home() {
     </div>
   );
 }
+
