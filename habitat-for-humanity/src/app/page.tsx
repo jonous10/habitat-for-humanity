@@ -13,34 +13,57 @@ export default function Home() {
       {/* HEADER */}
       <HH_Header />
       <div className="
-      sm:mx-auto
+      transition-all
+      duration-500
+      mx-auto
+      mt-0
+      sm:mb-20
+      max-sm:mb-0
       group
       ">
         <img
           src="/images/hh-family-expand2.jpg"
           className="
+            [GLOBAL]
+            relative 
+            w-screen 
+            object-cover
             transition-all 
-            sm:relative
-            sm:my-10 
-            sm:object-cover 
-            sm:duration-500
-            sm:rounded-[50%] 
-            sm:w-80 
+            duration-500
+            
+            [DESKTOP]
             sm:h-80
-            sm:group-hover:rounded-[0%]
-            sm:group-hover:w-480
-            sm:group-hover:h-120
-            sm:group-hover:mt-0
-            sm:group-hover:mb-20
-            sm:group-hover:[transform:rotateY(180deg)]
-            sm:transform [transform-style:preserve-3d]
+            sm:mt-0
+            sm:mb-20
+            sm:group-hover:h-140
+            sm:group-hover:mb-0
+
+            [MOBIL]
+            max-sm:mt-10
+            max-sm:mb-0
+            max-sm:w-80 
+            max-sm:h-80 
+            max-sm:rounded-[50%]
+
+            [HOVER ON MOBILE]
+            max-sm:group-hover:mt-0 
+            max-sm:group-hover:w-screen 
+            max-sm:group-hover:h-90
+            max-sm:group-hover:rounded-none
+            max-sm:group-hover:[transform:rotateY(180deg)]
+            max-sm:[transform-style:preserve-3d]
             "
           alt="Habitat for Humanity Family Photo"
           />
       </div>
-      <Button className="bg-red-600 m-auto">
-          <p className="font-bold text-xl">{language_sup.donate[lang as keyof typeof language_sup.donate]}</p>
-          <i className="fa-solid fa-heart fa-beat"></i>
+      <Button 
+          onClick={() => window.location.href = 'https://ffmpreg.org'} 
+          className="bg-red-600 m-auto mt-10 max-sm:hidden"
+        >
+        <p className="font-bold text-xl">
+          {language_sup.donate[lang as keyof typeof language_sup.donate]}
+        </p>
+        <i className="fa-solid fa-heart fa-beat"></i>
       </Button>
       {/* SLOGAN */}
       <h1 
@@ -62,7 +85,9 @@ export default function Home() {
       >
         {language_sup.shortinfo[lang as keyof typeof language_sup.shortinfo]}
       </p>
+      
       <HH_Footer/>
     </div>
   );
 }
+
