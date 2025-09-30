@@ -12,6 +12,7 @@ export default function Home() {
       {/* HEADER */}
       <HH_Header />
       <img src="/images/voluneer-abroad.jpg" className="object-cover h-120 mb-10"></img>
+      {/* VOLUNTEER INFO */}
       <p
         className="w-160 m-auto text-2xl"
         dangerouslySetInnerHTML={{
