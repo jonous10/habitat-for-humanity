@@ -12,17 +12,16 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* HEADER */}
       <HH_Header />
-      <div className="
-      sm:mx-auto
-      group
-      ">
-        
-      </div>
-      <Button className="bg-red-600 m-auto ">
-          <p className="font-bold text-xl">{language_sup.donate[lang as keyof typeof language_sup.donate]}</p>
-          <i className="fa-solid fa-heart fa-beat "></i>
-      </Button>
-      ABOUT US
+      <img src="/images/jreckford-portrait-0_0.jpg" className="object-cover h-120 mb-10"></img>
+      {/* ABOUT US INFO */}
+      <p
+        className="w-160 m-auto text-2xl"
+        dangerouslySetInnerHTML={{
+          __html: language_sup.about_us_info[
+            lang as keyof typeof language_sup.about_us_info
+          ],
+        }}
+      />
       <HH_Footer/>
     </div>
   );
